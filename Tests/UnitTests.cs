@@ -63,6 +63,6 @@ public class Power
 	{
         Assert.AreEqual(16, Program.Power("2", "4"));
         Assert.AreEqual(1, Program.Power("100", "0"));
-        Assert.AreEqual(17, Program.Power("4", "2"));
+        Assert.AreEqual(16, Program.Power("4", "2"));
     }
 }
