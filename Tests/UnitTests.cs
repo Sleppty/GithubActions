@@ -27,3 +27,42 @@ public class Addition
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Add(null, null));
 	}
 }
+
+[TestClass]
+public class Subtraction
+{
+	[TestMethod]
+
+	public void Subtract_Valid_Smith()
+	{
+        Assert.AreEqual(3, Program.Subtract("5", "2"));
+        Assert.AreEqual(0, Program.Subtract("3", "3"));
+        Assert.AreEqual(-2, Program.Subtract("5", "7"));
+    }
+}
+
+[TestClass]
+public class Multiplication
+{
+	[TestMethod]
+
+	public void Multiply_Valid_Smith()
+	{
+        Assert.AreEqual(15, Program.Multiply("5", "3"));
+        Assert.AreEqual(0, Program.Multiply("3", "0"));
+        Assert.AreEqual(-5, Program.Multiply("5", "-1"));
+    }
+}
+
+[TestClass]
+public class Power
+{ 
+	
+	[TestMethod]
+	public void Power_Valid_Smith()
+	{
+        Assert.AreEqual(16, Program.Power("2", "4"));
+        Assert.AreEqual(1, Program.Power("100", "0"));
+        Assert.AreEqual(17, Program.Power("4", "2"));
+    }
+}
